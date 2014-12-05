@@ -447,7 +447,7 @@
 &i2c2 {
 	status = "okay";
 	pinctrl-names = "default";
-	pinctrl-0 = <&i2c2_pins>;
+	pinctrl-0 = "";
 
 	clock-frequency = <100000>;
 

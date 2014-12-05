@@ -472,7 +472,8 @@ static void omap_init_rng(void)
 
 	oh = omap_hwmod_lookup("rng");
 	if (!oh)
-		return;
+	    return;
+	
 
 	pdev = omap_device_build("omap_rng", -1, oh, NULL, 0, NULL, 0, 0);
 	WARN(IS_ERR(pdev), "Can't build omap_device for omap_rng\n");
@@ -631,9 +632,10 @@ static int __init omap2_init_devices(void)
 		omap_init_mcspi();
 		omap_init_sham();
 		omap_init_aes();
+		omap_init_rng();
 	}
 	omap_init_sti();
-	omap_init_rng();
+
 	omap_init_vout();
 	omap_init_ocp2scp();
 	if (soc_is_am33xx()) {

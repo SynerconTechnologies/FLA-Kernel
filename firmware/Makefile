@@ -211,7 +211,13 @@ fw-shipped-$(CONFIG_CAPE_BEAGLEBONE) += \
 	bone_eqep0-00A0.dtbo \
 	bone_eqep1-00A0.dtbo \
 	bone_eqep2-00A0.dtbo \
-	BB-BONE-LOGIBONE-00R1.dtbo
+	BB-BONE-LOGIBONE-00R1.dtbo \
+	BB-DCAN0-00A0.dtbo \
+	BB-DCAN1-00A0.dtbo \
+	BB-UART2-00A0.dtbo \
+	BB-UART4-00A0.dtbo \
+	BB-UART5-00A0.dtbo \
+	BB-ADC-00A0.dtbo
 
 # the geiger cape
 fw-shipped-$(CONFIG_CAPE_BEAGLEBONE_GEIGER) += \
